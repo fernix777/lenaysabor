@@ -1,0 +1,379 @@
+/* Header Styles */
+:root {
+    --primary-color: #d9232d; /* Rojo principal */
+    --white: #ffffff;
+    --dark-color: #333333;
+    --accent-color: #ffc107;
+    --transition: all 0.3s ease;
+}
+
+/* Estilos base del header */
+.header {
+    position: fixed;
+    width: 100vw; /* Usamos viewport width para asegurar el ancho completo */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Asegurar que el header-top ocupe todo el ancho */
+.header-top {
+    background-color: #d9232d !important;
+    color: #ffffff !important;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 1001;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+/* Asegurar que no haya bordes ni fondos en los elementos hijos */
+.header-top * {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Contenedor dentro del header-top */
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar-container {
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* ==========================================
+   ESTILOS PARA LA INFORMACIÓN DE CONTACTO
+   ========================================== */
+
+/* Reset completo para el contenedor de contacto */
+.contact-info {
+    all: initial;
+    font-family: 'Poppins', sans-serif !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+}
+
+/* Reset completo para los elementos de contacto */
+.contact-info > span,
+.contact-info > a {
+    all: initial !important;
+    font-family: 'Poppins', sans-serif !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    margin: 0 20px 0 0 !important;
+    padding: 0 !important;
+    color: #ffffff !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-text-fill-color: #ffffff !important;
+    line-height: 1.2 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+/* Estilos para los iconos */
+.contact-info i {
+    all: initial !important;
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900 !important;
+    margin-right: 6px !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    display: inline-block !important;
+}
+
+/* Estilos específicos para el botón de WhatsApp */
+.whatsapp-btn {
+    color: #ffffff !important;
+    transition: color 0.2s ease !important;
+}
+
+.whatsapp-btn:hover {
+    color: #25d366 !important;
+}
+
+.whatsapp-btn i {
+    color: #25d366 !important;
+    font-size: 16px !important;
+}
+
+/* Contenedor derecho con PedidosYa y Redes Sociales */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.pedidos-ya-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.pedidos-ya-btn {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.pedidos-ya-btn:hover {
+    transform: scale(1.05);
+}
+
+.pedidos-ya-img {
+    height: 30px;
+    width: auto;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.encontranos-text {
+    color: #ffffff;
+    margin: 0 5px 0 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-link {
+    color: #ff0000; /* Color rojo */
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: none; /* Aseguramos que no tenga sombra */
+}
+
+.social-link:hover {
+    background-color: #ff0000; /* Fondo rojo al hacer hover */
+    color: #ffffff;
+    transform: none; /* Eliminamos el efecto de elevación */
+    box-shadow: none; /* Aseguramos que no tenga sombra al hacer hover */
+}
+
+/* Navbar container */
+.navbar-container {
+    background-color: transparent;
+    width: 100%;
+    box-shadow: none;
+    }
+    
+    .social-links {
+        margin-left: 10px;
+    }
+    
+    .social-link {
+        width: 26px;
+        height: 26px;
+        font-size: 14px;
+    }
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 0;
+    background-color: var(--white);
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    max-height: 50px; /* Adjust the height as needed */
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 5px 0;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    min-height: 500px;
+    max-height: 800px;
+    overflow: hidden;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero:hover .hero-img {
+    transform: scale(1.05);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+}
+
+.hero .hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--white);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero:hover .hero-content {
+    transform: translateY(-10px);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por tu reserva! - Leña y Sabor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/gracias.css">
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="thank-you-card">
+            <div class="checkmark">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>¡Reserva Recibida!</h1>
+            <p>Hemos recibido tu solicitud de reserva y nos pondremos en contacto contigo lo antes posible para confirmarla.</p>
+            
+            <div class="reservation-details">
+                <h2>Detalles de tu reserva</h2>
+                <p><i class="far fa-user"></i> <span id="reservation-name"></span></p>
+                <p><i class="far fa-calendar-alt"></i> <span id="reservation-date"></span></p>
+                <p><i class="far fa-clock"></i> <span id="reservation-time"></span></p>
+                <p><i class="fas fa-users"></i> <span id="reservation-people"></span> personas</p>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Información de contacto</h3>
+                <p><i class="fas fa-phone-alt"></i> +51 947 798 798</p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. San Juan 1022, Lima, Perú</p>
+                <p><i class="far fa-clock"></i> Lunes a Domingo: 12:00 PM - 10:00 PM</p>
+            </div>
+            
+            <a href="index.html#contacto" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Volver al sitio
+            </a>
+            
+            <div class="social-links">
+                <p>Síguenos en nuestras redes sociales:</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Obtener parámetros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Mostrar los detalles de la reserva si están disponibles
+        document.addEventListener('DOMContentLoaded', function() {
+            const name = urlParams.get('name') || 'Cliente';
+            const date = urlParams.get('fecha') || 'No especificada';
+            const time = urlParams.get('hora') || 'No especificada';
+            const people = urlParams.get('people') || 'No especificado';
+            
+            document.getElementById('reservation-name').textContent = name;
+            document.getElementById('reservation-date').textContent = formatDate(date) || 'No especificada';
+            document.getElementById('reservation-time').textContent = time || 'No especificada';
+            document.getElementById('reservation-people').textContent = people || 'No especificado';
+        });
+        
+        // Formatear fecha a un formato legible
+        function formatDate(dateString) {
+            if (!dateString) return '';
+            const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+            return new Date(dateString).toLocaleDateString('es-PE', options);
+        }
+    </script>
+</body>
+</html>
