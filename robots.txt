@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.lenaysabor.com/sitemap.xml
+
+# Bloquear carpetas internas si las hubiera (ejemplo)
+# Disallow: /admin/
+# Disallow: /private/
