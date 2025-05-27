@@ -186,29 +186,50 @@
 .social-links {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    margin-left: 15px;
 }
 
 .social-link {
-    color: #ff0000; /* Color rojo */
-    font-size: 16px;
-    width: 30px;
-    height: 30px;
+    color: white;
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
     text-decoration: none;
     box-shadow: none; /* Aseguramos que no tenga sombra */
 }
 
-.social-link:hover {
-    background-color: #ff0000; /* Fondo rojo al hacer hover */
-    color: #ffffff;
-    transform: none; /* Eliminamos el efecto de elevación */
-    box-shadow: none; /* Aseguramos que no tenga sombra al hacer hover */
+/* Estilos de hover para cada red social */
+.social-link.facebook:hover {
+    background-color: #1877f2; /* Azul de Facebook */
+    border-color: #1877f2;
+    transform: translateY(-2px);
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+.social-link.tiktok:hover {
+    background-color: #000000;
+    border-color: #000000;
+    transform: translateY(-2px);
+}
+
+.social-link.whatsapp:hover {
+    background-color: #25d366; /* Verde de WhatsApp */
+    border-color: #25d366;
+    transform: translateY(-2px);
 }
 
 /* Navbar container */
