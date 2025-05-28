@@ -1,16 +1,16 @@
 // Mapeo de productos por categoría (igual que en main.js, puedes personalizar)
 const productosPorCategoria = {
     'VINOS': [
-        { nombre: 'Vino Tinto Buenos Aires', precio: 60, imagen: '/images/vinos/vino_buenos_aires_malbec.jpeg' },
-        { nombre: 'Vino Blanco Dulce', precio: 55, imagen: 'images/vino-blanco.jpg' },
-        { nombre: 'Vino Rosé', precio: 58, imagen: 'images/vino-rose.jpg' },
-        { nombre: 'Vino Malbec', precio: 70, imagen: 'images/vino-malbec.jpg' },
-        { nombre: 'Vino Cabernet', precio: 65, imagen: 'images/vino-cabernet.jpg' },
-        { nombre: 'Vino Merlot', precio: 62, imagen: 'images/vino-merlot.jpg' },
-        { nombre: 'Vino Syrah', precio: 68, imagen: 'images/vino-syrah.jpg' },
-        { nombre: 'Vino Espumante', precio: 75, imagen: 'images/vino-espumante.jpg' },
-        { nombre: 'Vino Crianza', precio: 80, imagen: 'images/vino-crianza.jpg' },
-        { nombre: 'Vino Selección', precio: 90, imagen: 'images/vino-seleccion.jpg' }
+        { nombre: 'Vino Tinto Buenos Aires', precio: 45, imagen: '/images/vinos/vino_buenos_aires_malbec.jpeg' },
+        { nombre: 'Vino Queirolo Borgoña', precio: 38, imagen: '/images/vinos/santiago-queirolo-borgona.jpg' },
+        { nombre: 'Vino Queirolo Rose', precio: 38, imagen: '/images/vinos/SANTIAGO-QUEIROLO-ROSE.jpg' },
+        { nombre: 'Sangria de la casa 1 lt', precio: 40, imagen: '/images/vinos/sangria-de-la-casa.jpg' },
+        { nombre: 'Sangria Especial  1lt', precio: 50, imagen: 'images/vinos/sangria-de-la-casa.jpg' },
+        { nombre: 'Vino Tabernero Borgoña', precio: 38, imagen: '/images/vinos/tabernero_borgoña.jpg' },
+        { nombre: 'Vino Tabernero Gran Rose', precio: 38, imagen: '/images/vinos/tabernero_granrose.png' },
+        { nombre: 'Vino Tabernero Tinto', precio: 45, imagen: '/images/vinos/tabernero_tinto.png' },
+        { nombre: 'Vino Tacama Rose', precio: 45, imagen: '/images/vinos/tacama_rose.jpg' },
+        { nombre: 'Vino Tacama Tinto', precio: 45, imagen: '/images/vinos/tacama_tinto.jpg' }
     ],
     'POLLOS A LA PARRILLA': [
         { nombre: 'Pollo Entero a la Parrilla', precio: 48, imagen: 'images/pollo-parrilla-entero.jpg' },

@@ -572,3 +572,209 @@ p { margin-bottom: 25px; color: #555; font-size: 1.1rem; }
         grid-template-columns: 1fr;
     }
 }
+
+/* HEADER Y PEDIDOS YA RESPONSIVE */
+@media (max-width: 768px) {
+  .header-top .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 10px;
+  }
+  .header-right {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 6px;
+  }
+  .pedidos-ya-container {
+    width: 100%;
+    margin: 0 0 8px 0;
+    justify-content: flex-start;
+  }
+  .pedidos-ya-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(217,35,45,0.08);
+    background: #fff;
+    border: 2px solid #d9232d;
+    color: #d9232d;
+    font-weight: 600;
+    gap: 10px;
+  }
+  .pedidos-ya-btn:hover {
+    background: #ffeaea;
+    color: #b22222;
+  }
+  .pedidos-ya-img {
+    height: 32px;
+    margin-left: 10px;
+  }
+  .encontranos-text {
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .social-links {
+    margin-left: 0;
+    margin-top: 8px;
+    gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .header-top {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+  .pedidos-ya-btn {
+    font-size: 1rem;
+    padding: 10px 0;
+    min-height: 44px;
+  }
+  .pedidos-ya-img {
+    height: 28px;
+  }
+  .navbar {
+    min-height: 48px;
+    padding: 0 6px;
+  }
+  .logo-img {
+    max-height: 28px;
+  }
+}
+
+/* SOLUCIÓN HEADER MOBILE: evitar scroll horizontal y quiebres */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.header-top, .navbar-container, .navbar, .header-right, .pedidos-ya-container, .social-links {
+  min-width: 0;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+.header-top .container, .navbar .container {
+  flex-wrap: wrap;
+  min-width: 0;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .header-top .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 8px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  .header-right {
+    width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 6px;
+  }
+  .pedidos-ya-container {
+    width: 100%;
+    min-width: 0;
+    margin: 0 0 8px 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .pedidos-ya-btn {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid #d9232d;
+    color: #d9232d;
+    font-weight: 600;
+    gap: 10px;
+  }
+  .pedidos-ya-img {
+    height: 32px;
+    margin-left: 10px;
+    max-width: 80px;
+    width: auto;
+  }
+  .encontranos-text {
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-right: 10px;
+    min-width: 0;
+  }
+  .social-links {
+    margin-left: 0;
+    margin-top: 8px;
+    gap: 10px;
+    flex-wrap: wrap;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .social-link {
+    min-width: 0;
+    max-width: 44px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 576px) {
+  .header-top {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+  .pedidos-ya-btn {
+    font-size: 1rem;
+    padding: 10px 0;
+    min-height: 44px;
+  }
+  .pedidos-ya-img {
+    height: 28px;
+    max-width: 60px;
+  }
+  .navbar {
+    min-height: 48px;
+    padding: 0 4px;
+  }
+  .logo-img {
+    max-height: 28px;
+  }
+}
+
+/* Ajuste específico para imágenes de la categoría VINOS en tarjetas de producto */
+.producto-card[data-categoria="VINOS"] .producto-img,
+.producto-card.vinos .producto-img,
+#productos-lista[data-categoria="VINOS"] .producto-img {
+  object-fit: contain !important;
+  background: #fff;
+  padding: 10px 0;
+  height: 160px;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Ajuste específico para la imagen de Vino Tabernero Borgoña */
+.producto-card .producto-img[src*="tabernero_borgoña"],
+.producto-card .producto-img[src*="tabernero_borgo%C3%B1a"],
+.producto-card .producto-img[src*="tabernero_borgoña.jpg"] {
+  object-fit: contain !important;
+  background: #fff;
+  padding: 18px 0;
+  height: 160px;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Mejoras overlay menú móvil */
+.overlay {
+  z-index: 998 !important;
+}
