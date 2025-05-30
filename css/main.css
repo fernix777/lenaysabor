@@ -51,8 +51,55 @@ img { max-width: 100%; height: auto; display: block; }
 .header-top .container { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; padding: 0 20px; width: 100%; box-sizing: border-box; }
 .header-right { display: flex; align-items: center; }
 .pedidos-ya-container { display: flex; align-items: center; margin-right: 20px; }
-.pedidos-ya-btn { display: flex; align-items: center; background-color: #fff; padding: 5px 10px; border-radius: 4px; text-decoration: none; transition: transform 0.3s ease; }
-.pedidos-ya-btn:hover { transform: scale(1.05); }
+.pedidos-ya-btn {
+  background: transparent !important;
+  border: 2px solid #d9232d;
+  color: #d9232d;
+  font-weight: 600;
+  box-shadow: none !important;
+  transition: background 0.3s, color 0.3s;
+  position: relative;
+  z-index: 1;
+  overflow: visible !important;
+}
+.pedidos-ya-btn:hover,
+.pedidos-ya-btn:focus {
+  background: transparent !important;
+  color: #b22222 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.pedidos-ya-btn:after,
+.pedidos-ya-btn:before,
+.pedidos-ya-btn > span:after,
+.pedidos-ya-btn > span:before {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+.pedidos-ya-btn > span,
+.pedidos-ya-btn > span[style] {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  color: inherit !important;
+}
+.pedidos-ya-btn *,
+.pedidos-ya-btn *:after,
+.pedidos-ya-btn *:before {
+  box-shadow: none !important;
+  background: none !important;
+  content: none !important;
+}
+.pedidos-ya-btn[style] {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+/* Eliminar cualquier background, sombra o duplicado de frameworks externos */
+.pedidos-ya-btn:not(:hover):not(:focus) {
+  background: transparent !important;
+}
 .pedidos-ya-img { height: 30px; width: auto; border-radius: 4px; margin-left: 5px; }
 .encontranos-text { color: #ffffff; margin: 0 5px 0 0; font-size: 0.9rem; display: flex; align-items: center; }
 .social-links { display: flex; align-items: center; gap: 15px; margin-left: 15px; }
@@ -379,19 +426,16 @@ p { margin-bottom: 25px; color: #555; font-size: 1.1rem; }
     gap: 8px;
 }
 .typing-text {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #222;
-    background: linear-gradient(90deg,#ffd700,#d9232d 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: #d9232d;
+    background: #fff;
+    border-radius: 8px;
+    padding: 6px 18px;
+    display: inline-block;
+    margin-bottom: 0;
     letter-spacing: 1px;
-    position: relative;
-    min-height: 1.5em;
-    cursor: pointer;
-    transition: filter 0.2s;
-    text-shadow: 0 2px 8px #fff, 0 1px 0 #00000022;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 .typing-text:hover {
     filter: brightness(1.2) drop-shadow(0 2px 8px #ffc10788);
@@ -426,6 +470,15 @@ p { margin-bottom: 25px; color: #555; font-size: 1.1rem; }
     .hero h1 { font-size: 1.3rem; }
     .hero-image { width: 120px; }
 }
+
+/* HERO SECTION: fondo a lo ancho, centrado y sin desplazamiento */
+.hero-section, .hero-image-section, section.hero, .hero {
+  background: url('../images/background-hero.jpg') center center/cover no-repeat;
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+}
+/* FIN ajuste imagen hero centrada */
 
 /* Modal de productos por categoría */
 .modal-productos-categoria {
@@ -734,19 +787,14 @@ html, body {
     font-size: 1rem;
     padding: 10px 0;
     min-height: 44px;
+    background: transparent !important;
+    box-shadow: none !important;
   }
   .pedidos-ya-img {
-    height: 28px;
-    max-width: 60px;
-  }
-  .navbar {
-    min-height: 48px;
-    padding: 0 4px;
-  }
-  .logo-img {
-    max-height: 28px;
+    height: 28px !important;
   }
 }
+/* --- FIN REFORZADO PEDIDOS YA --- */
 
 /* Ajuste específico para imágenes de la categoría VINOS en tarjetas de producto */
 .producto-card[data-categoria="VINOS"] .producto-img,
@@ -777,4 +825,117 @@ html, body {
 /* Mejoras overlay menú móvil */
 .overlay {
   z-index: 998 !important;
+}
+
+/* OCULTAR TEXTO NEGRO JUNTO AL BOTÓN PEDIDOS YA */
+.pedidos-ya-btn + span,
+.pedidos-ya-btn + .pedidos-ya-text,
+.pedidos-ya-container .pedidos-ya-text,
+.pedidos-ya-container span:not(.encontranos-text):not(.pedidos-ya-btn *) {
+  display: none !important;
+  color: transparent !important;
+  background: transparent !important;
+  font-size: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  line-height: 0 !important;
+  visibility: hidden !important;
+}
+.pedidos-ya-btn span {
+  color: #d9232d !important;
+}
+/* FIN OCULTAR TEXTO NEGRO */
+
+/* Eliminar overlay/capa de color en hero */
+.hero-section .hero-overlay, .hero .hero-overlay {
+  display: none !important;
+  background: none !important;
+}
+
+/* HERO LOGO ROTATING A LA DERECHA */
+.hero-section {
+  position: relative;
+  overflow: visible;
+}
+.hero-logo-rotating {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(0deg);
+  width: auto;
+  height: auto;
+  max-width: 340px;
+  max-height: 90vh;
+  z-index: 3;
+  transition: transform 0.7s cubic-bezier(.4,2,.6,1);
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .hero-logo-rotating {
+    max-width: 180px;
+    max-height: 40vw;
+    right: 0;
+    top: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .hero-logo-rotating {
+    max-width: 120px;
+    max-height: 32vw;
+    right: 0;
+    top: 70%;
+  }
+}
+/* FIN HERO LOGO ROTATING */
+
+/* HERO: h1 grande y destacado */
+.hero-section h1 {
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  margin-bottom: 18px;
+  line-height: 1.05;
+}
+@media (max-width: 900px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+}
+/* FIN HERO h1 grande */
+
+/* CONTACTO: WhatsApp sin transparencia */
+.contact .btn-whatsapp, .btn-whatsapp {
+  background: #25d366 !important;
+  color: #fff !important;
+  opacity: 1 !important;
+  box-shadow: 0 2px 8px rgba(37,211,102,0.18);
+  border: none !important;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+.contact .btn-whatsapp:hover, .btn-whatsapp:hover {
+  background: #1ebe5d !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+/* CONTACTO: íconos de redes sociales sólidos */
+.footer .social-link, .contact .social-link, .social-link {
+  background-color: #fff !important;
+  color: #d9232d !important;
+  opacity: 1 !important;
+  border: 1px solid #d9232d !important;
+  box-shadow: 0 2px 8px rgba(217,35,45,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.footer .social-link:hover, .contact .social-link:hover, .social-link:hover {
+  background-color: #d9232d !important;
+  color: #fff !important;
+  opacity: 1 !important;
 }

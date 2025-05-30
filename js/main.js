@@ -426,3 +426,16 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.target === modal) modal.style.display = 'none';
     });
 });
+
+// Rotación de logo en hero al hacer scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const logo = document.getElementById('heroLogoRotating');
+  if (!logo) return;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 10) {
+      logo.style.transform = 'translateY(-50%) rotate(180deg)';
+    } else {
+      logo.style.transform = 'translateY(-50%) rotate(0deg)';
+    }
+  });
+});

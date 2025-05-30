@@ -13,34 +13,34 @@ const productosPorCategoria = {
         { nombre: 'Vino Tacama Tinto', precio: 45, imagen: '/images/vinos/tacama_tinto.jpg' }
     ],
     'POLLOS A LA PARRILLA': [
-        { nombre: 'Pollo Entero a la Parrilla', precio: 48, imagen: 'images/pollo-parrilla-entero.jpg' },
-        { nombre: 'Medio Pollo a la Parrilla', precio: 28, imagen: 'images/pollo-parrilla-medio.jpg' },
-        { nombre: 'Cuarto de Pollo a la Parrilla', precio: 18, imagen: 'images/pollo-parrilla-cuarto.jpg' },
-        { nombre: 'Pollo Parrillero Especial', precio: 55, imagen: 'images/pollo-parrillero-especial.jpg' },
-        { nombre: 'Pollo Parrilla Familiar', precio: 90, imagen: 'images/pollo-parrilla-familiar.jpg' }
+        { nombre: 'Pechuga a La Leña ', precio: 28, imagen: '/images/pollos-a-la-parrilla/pechuga-a-la-leña.jpg' },
+        { nombre: 'Pechuga Cordon Bleu', precio: 33, imagen: '/images/pollos-a-la-parrilla/pechuga-cordon-bleu.jpg' },
+        { nombre: 'Pechuga de Pollo Bbq', precio: 28, imagen: '/images/pollos-a-la-parrilla/pechuga-de-pollo-bbq.jpg' },
+        { nombre: 'Pierna Deshuesada a la Parrilla', precio: 25, imagen: '/images/pollos-a-la-parrilla/pierna-deshuesada-a-la-parrilla.jpg' },
+        { nombre: 'Pierna Deshuesada Bbq', precio: 25, imagen: '/images/pollos-a-la-parrilla/pierna-deshuesada-bbq.jpg' }
     ],
     'POLLO A LA LEÑA': [
-        { nombre: 'Pollo Entero a la Leña', precio: 45, imagen: 'images/pollo-leña-entero.jpg' },
-        { nombre: 'Medio Pollo a la Leña', precio: 25, imagen: 'images/pollo-leña-medio.jpg' },
-        { nombre: 'Cuarto de Pollo a la Leña', precio: 15, imagen: 'images/pollo-leña-cuarto.jpg' },
-        { nombre: 'Pollo Leña Familiar', precio: 80, imagen: 'images/pollo-leña-familiar.jpg' },
-        { nombre: 'Pollo Leña Especial', precio: 60, imagen: 'images/pollo-leña-especial.jpg' },
-        { nombre: 'Pollo Leña Tradicional', precio: 50, imagen: 'images/pollo-leña-tradicional.jpg' },
-        { nombre: 'Pollo Leña Premium', precio: 70, imagen: 'images/pollo-leña-premium.jpg' }
+        { nombre: 'Combo Familiar #1', precio: 70, imagen: '/images/Pollo-a-la-leña/pollo-familiar-combo-1.jpg' },
+        { nombre: 'Combo Familiar #2', precio: 70, imagen: '/images/Pollo-a-la-leña/pollo-familiar-combo-2.jpg' },
+        { nombre: 'Combo Familiar #3', precio: 73, imagen: '/images/Pollo-a-la-leña/pollo-familiar-combo-3.jpg' },
+        { nombre: 'Combo Familiar #4', precio: 88, imagen: '/images/Pollo-a-la-leña/pollo-familiar-combo-4.jpg' },
+        { nombre: '1 Pollo a La Leña', precio: 60, imagen: '/images/Pollo-a-la-leña/1-pollo-a-la-leña.jpg' },
+        { nombre: '1/2 Pollo a La Leña', precio: 37, imagen: '/images/Pollo-a-la-leña/medio-pollo-a-la-parrilla.jpg' },
+        { nombre: '1/4 Pollo a La Leña', precio: 20, imagen: '/images/Pollo-a-la-leña/cuarto-pollo-a-la-leña.jpg' }
     ],
     'PIQUEOS': [
-        { nombre: 'Tequeños', precio: 22, imagen: 'images/tequeños.jpg' },
-        { nombre: 'Alitas BBQ', precio: 25, imagen: 'images/alitas-bbq.jpg' },
-        { nombre: 'Papas Bravas', precio: 18, imagen: 'images/papas-bravas.jpg' },
-        { nombre: 'Chorizo Artesanal', precio: 20, imagen: 'images/chorizo-artesanal.jpg' },
-        { nombre: 'Brochetas de Pollo', precio: 24, imagen: 'images/brochetas-pollo.jpg' },
-        { nombre: 'Yuquitas Fritas', precio: 16, imagen: 'images/yuquitas.jpg' },
-        { nombre: 'Croquetas de Jamón', precio: 21, imagen: 'images/croquetas-jamon.jpg' },
-        { nombre: 'Piqueo Mixto', precio: 30, imagen: 'images/piqueo-mixto.jpg' },
-        { nombre: 'Piqueo Criollo', precio: 28, imagen: 'images/piqueo-criollo.jpg' }
+        { nombre: 'Alitas a La BBQ- 14 Unidades', precio: 32, imagen: '/images/Piqueos/alitas-a-la-bbq.jpg' },
+        { nombre: 'Alitas A la BBQ Picantes- 14 Unidades', precio: 32, imagen: '/images/Piqueos/alitas-a-la-bbq.jpg' },
+        { nombre: 'Anticucho Parrillero', precio: 23, imagen: '/images/Piqueos/anticucho-parrillero.jpg' },
+        { nombre: 'Chicharron de Pollo', precio: 25, imagen: '/images/Piqueos/chicharron-de-pollo.jpg' },
+        { nombre: 'Chorizo', precio: 20, imagen: '/images/Piqueos/chorizos.jpg' },
+        { nombre: 'Mollejitas De Pollo', precio: 18, imagen: '/images/Piqueos/mollejitas-de-pollo.jpg' },
+        { nombre: 'Tequeños Leña Y Sabor', precio: 15, imagen: '/images/Piqueos/Tequeños-leña-y-sabor.jpg' },
+        { nombre: 'Tequeños Tradicionales', precio: 15, imagen: '/images/Piqueos/Tequeños-leña-y-sabor.jpg' },
+        
     ],
     'NUESTRAS PASTAS': [
-        { nombre: 'Pasta Alfredo', precio: 32, imagen: 'images/pasta-alfredo.jpg' },
+        { nombre: 'Tallarines Verdes Con Bife', precio: 42, imagen: '/images/pastas/tallarin-verde-con-bife.jpg' },
         { nombre: 'Pasta Boloñesa', precio: 34, imagen: 'images/pasta-boloñesa.jpg' },
         { nombre: 'Pasta Carbonara', precio: 36, imagen: 'images/pasta-carbonara.jpg' },
         { nombre: 'Pasta Pesto', precio: 30, imagen: 'images/pasta-pesto.jpg' },
