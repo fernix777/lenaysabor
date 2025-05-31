@@ -41,23 +41,23 @@ const productosPorCategoria = {
     ],
     'NUESTRAS PASTAS': [
         { nombre: 'Tallarines Verdes Con Bife', precio: 42, imagen: '/images/pastas/tallarin-verde-con-bife.jpg' },
-        { nombre: 'Pasta Boloñesa', precio: 34, imagen: 'images/pasta-boloñesa.jpg' },
-        { nombre: 'Pasta Carbonara', precio: 36, imagen: 'images/pasta-carbonara.jpg' },
-        { nombre: 'Pasta Pesto', precio: 30, imagen: 'images/pasta-pesto.jpg' },
-        { nombre: 'Pasta a la Huancaína', precio: 33, imagen: 'images/pasta-huancaina.jpg' },
-        { nombre: 'Pasta con Pollo', precio: 35, imagen: 'images/pasta-pollo.jpg' },
-        { nombre: 'Pasta con Lomo', precio: 38, imagen: 'images/pasta-lomo.jpg' },
-        { nombre: 'Pasta con Mariscos', precio: 40, imagen: 'images/pasta-mariscos.jpg' },
-        { nombre: 'Pasta Vegetariana', precio: 29, imagen: 'images/pasta-vegetariana.jpg' },
-        { nombre: 'Pasta 4 Quesos', precio: 37, imagen: 'images/pasta-4quesos.jpg' },
-        { nombre: 'Pasta Napolitana', precio: 31, imagen: 'images/pasta-napolitana.jpg' },
-        { nombre: 'Pasta a la Putanesca', precio: 39, imagen: 'images/pasta-putanesca.jpg' }
+        { nombre: 'Tallarin Verde Con Chuleta', precio: 29, imagen: '/images/pastas/tallarin-verde-con-chuleta.jpg' },
+        { nombre: 'Tallarin Verde Con Churrasco', precio: 35, imagen: '/images/pastas/tallarin-verde-con-churrasco.jpg' },
+        { nombre: 'Tallarin Verde Con Pechuga a la Parrilla', precio: 32, imagen: '/images/pastas/tallarines-verdes-con-pechuga-a-la-parrilla.jpg' },
+        { nombre: 'Tallarines A la Huancaina Con Bife', precio: 36, imagen: '/images/pastas/tallarines-huancaina-con-bife.jpg' },
+        { nombre: 'Tallarines A la Huancaina Con Chuleta', precio: 32, imagen: '/images/pastas/tallarines-huaincana-chuleta.jpg' },
+        { nombre: 'Tallarines a la Huancaina Con Churrasco', precio: 37, imagen: '/images/Pastas/tallarines-huancaina-con-churrasco.jpg' },
+        { nombre: 'Tallarines a La Huancaina con Lomo Saltado', precio: 37, imagen: '/images/Pastas/tallarines-huaicana-lomo.jpg' },
+        { nombre: 'Tallarines A La Huancaina Con Pechuga A La Parrilla', precio: 35, imagen: '/images/Pastas/tallarines-huncaina-pechuga.jpg' },
+        { nombre: 'Tallarines A Lo Alfredo', precio: 25, imagen: '/images/Pastas/tallarines-a-lo-alfredo.jpg' },
+        { nombre: 'Tallarines A Lo Alfredo Con Bife', precio: 40, imagen: '/images/Pastas/tallarines-huancaina-con-bife.jpg' },
+        { nombre: 'Tallarines A Lo Alfredo Con Pechuga', precio: 35, imagen: '/images/Pastas/tallarines-huncaina-pechuga.jpg' }
     ],
     'NUESTRAS PARRILLAS': [
-        { nombre: 'Parrilla Mixta', precio: 85, imagen: 'images/parrilla-mixta.jpg' },
-        { nombre: 'Parrilla Personal', precio: 45, imagen: 'images/parrilla-personal.jpg' },
-        { nombre: 'Parrilla Familiar', precio: 120, imagen: 'images/parrilla-familiar.jpg' },
-        { nombre: 'Parrilla Especial', precio: 100, imagen: 'images/parrilla-especial.jpg' }
+        { nombre: 'Parrilla Familiar', precio: 110, imagen: '/images/Nuestras-Parrillas/Parrilla-Familiar.jpg' },
+        { nombre: 'Parrilla Leña Y Sabor', precio: 139, imagen: '/images/Nuestras-Parrillas/Parrilla-leña-y-sabor.jpg' },
+        { nombre: 'Parrilla Mediana', precio: 80, imagen: '/images/Nuestras-Parrillas/Parrilla-Familiar.jpg' },
+        { nombre: 'Parrilla Para Dos', precio: 60, imagen: '/images/Nuestras-Parrillas/Parrilla-para-dos.jpg' }
     ],
     'NUESTRAS CARNES': [
         { nombre: 'Lomo Fino', precio: 55, imagen: 'images/lomo-fino.jpg' },
