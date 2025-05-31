@@ -209,9 +209,10 @@ p { margin-bottom: 25px; color: #555; font-size: 1.1rem; }
     letter-spacing: -1px;
 }
 .logo-img {
-    max-height: 48px;
+    max-height: 150px;
     width: auto;
     display: block;
+    border-radius: 50%;
 }
 .nav-links {
     display: flex;
